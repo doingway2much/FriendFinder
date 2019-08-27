@@ -1,0 +1,28 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "A node.js and Express App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doingway2much/FriendFinder.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Seth Randell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doingway2much/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/doingway2much/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
