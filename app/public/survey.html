@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding Friend Finder Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container content">
+        <h1>Coding Survey</h1>
+        <p>Take a quick survey to find your perfect codeing friend!!!!  All of the statements are related to coding and have 
+           values from 1 - 5.  If you really aggre with the statemnt your would slect a 5, if feel the complete opisit of the stament you would select 1.</p>
+        <form>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+            </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="URL to  Profile Photo (Required)">
+            </div>
+            <div class="form-group">
+                <label for="question1">I love javascript and I can not lie!!!!!!</label>
+                <select class="form-control" id="question1">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2">Tabs over spaces!!!!</label>
+                <select class="form-control" id="question2">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3">I don't know what I would do without jQuery</label>
+                <select class="form-control" id="question3">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4">HTML is my favorite thing to code!!!!!</label>
+                <select class="form-control" id="question4">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question5">CSS is my jam and I don't know what I wouuld do without it</label>
+                <select class="form-control" id="question5">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question6">Sitting up at night working on mySQL querries brings me joy</label>
+                <select class="form-control" id="question6">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question7">Handelbars you complete me</label>
+                <select class="form-control" id="question7">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question8">Node.js bring me life</label>
+                <select class="form-control" id="question8">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question9">Express is the best thing since sliced bread</label>
+                <select class="form-control" id="question9">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question10">When in doubt consoe.log it out!!!!!!!!!</label>
+                <select class="form-control" id="question10">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </form>
+		<div class="text-center">
+			<button id="submitButton" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
+
+
+            <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+	$("#submitButton").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		var good = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			good = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			good = false;
+		}
+		if(good === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+	
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+                console.log("New friend added!!!!!")
+				// $("#bestFriend").text(data.name);
+				// $("#bestFriendPhoto").attr("src", data.photo);
+				// $("#bestFriendModal").modal("toggle");
+			});
+		} else {
+		
+			alert("Opps looks like you missed one!!!!!");
+		}
+	});
+</script>
