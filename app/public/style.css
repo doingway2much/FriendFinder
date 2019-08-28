@@ -1,0 +1,19 @@
+body {
+    background-image: url("/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+   }
+
+.content {
+    background-color: white;
+}
+
+.footer {
+    color: black;
+}
+   /* .jumbotron {
+    background-color: firebrick;
+    color: white;
+    opacity: .75;
+    margin-top: 20px;
+} */
