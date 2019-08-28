@@ -159,7 +159,28 @@
         <div class="row">
 		<div class="text-center">
 			<button id="submitButton" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
-		</div>
+        </div>
+        <!-- Modal -->
+        <div id="coderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+  
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+              <h2 class="modal-title"><strong>Your most compatible coder</strong></h2>
+            </div>
+            <div class="modal-body">
+              <h2 id="matchName"></h2>
+              <img id="matchImg" src ="" alt="" height="350" width="300">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" id="closeCoderModal" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
    <br>
     <footer class="footer">
             <div class="container">
@@ -210,13 +231,21 @@
 	
 			$.post(currentURL + "/api/friends", newUser, function(data) {
                 console.log("New friend added!!!!!")
-				// $("#bestFriend").text(data.name);
-				// $("#bestFriendPhoto").attr("src", data.photo);
-				// $("#bestFriendModal").modal("toggle");
+                $("#matchName").text(data.name);
+                $('#matchImg').attr("src", data.photo);
+                $("#coderModal").modal('toggle');
+                $("#name").val("");
+                $("#photo").val("");
 			});
 		} else {
 		
 			alert("Opps looks like you missed one!!!!!");
 		}
-	});
+    });
+    
+    $('#closeCoderModal').click(function() {
+    $.get('/',function(req,res){
+    location.replace(res);
+    })
+});
 </script>

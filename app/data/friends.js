@@ -1,10 +1,14 @@
   var friends = [
 	{
-		name: "Ahmed",
-		photo: "data:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDt0nGM4wCOXAsWVYNi_mhIgt0Kx4OhRONViibpDrpmgqfLlUyg",
-		scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
+		"name": "Richard Hendricks",
+		"photo": "data:https://www.magicalquote.com/wp-content/uploads/2015/07/Richard-Hendricks.jpg",
+		"scores": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
     },
-    
+    {
+      "name": "Nelson 'Big Head' Bighetti",
+      "photo": "data:http://siliconvalleyism.com/characters/big-head-small.jpg",
+      "scores": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+      }  
   ]
 
   module.exports = friends;
