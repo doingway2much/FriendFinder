@@ -30,3 +30,11 @@ npm install
 ```
 var PORT = process.env.PORT || 8080;
 ```
+
+4. Run the app
+
+```
+node server.js
+```
+
+4.  Once you have tested the app and made sure it's working go ahead and deploy it to your Webserver or Heroku!!!!!!
