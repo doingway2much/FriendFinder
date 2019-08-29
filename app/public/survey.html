@@ -222,6 +222,7 @@
 
 
 <script type="text/javascript">
+    //  On click funtion to send data to the friends.js array 
     $("#submitButton").on("click", function (event) {
         event.preventDefault();
         var good = true;
@@ -247,8 +248,9 @@
                     $("#statement10").val()
                 ]
             };
-            var currentURL = window.location.origin;
 
+            // Ajax call to pull coders from the data file freieds.js
+            var currentURL = window.location.origin;
             $.post(currentURL + "/api/friends", newCoder, function (data) {
                 $("#matchedCoder").text(data.name);
                 console.log(data.photo);
@@ -263,6 +265,7 @@
         }
     });
 
+    //  Close Modal
     $('#closeCoderModal').click(function () {
         $.get('/', function (req, res) {
             location.replace(res);
