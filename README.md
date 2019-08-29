@@ -1,6 +1,6 @@
 # Coding Friend Finder
 
-This App uses NODE.js + Javascript + Express + jQuery to complie a list of frinds and compare values based on statements they anwser.  Once a user comppets a survey their vlaues will be compared to all user values and the App will display the users with the closest values to yours.  
+This App uses NODE.js + Javascript + Express + jQuery to complie a list of frinds and compare values based on statements they anwser.  Once a user completes a survey their vlaues will be compared to all of the other users values and the App will display the user with the closest values to yours.  
 
 
 # Home Screen
@@ -19,7 +19,7 @@ This App uses NODE.js + Javascript + Express + jQuery to complie a list of frind
 git clone https://github.com/doingway2much/FriendFinder.git
 ```
 
-2.  Next you will need to install the necessary NOMM packages by running the following command (THis is posible cause we have a package.json files with all the packages needed)
+2.  Next you will need to install the necessary NPM packages by running the following command (This is posible cause we have a package.json file with all the packages needed)
 
 ```
 npm install
@@ -31,7 +31,7 @@ npm install
 var PORT = process.env.PORT || 8080;
 ```
 
-4. Run the app
+4. Run the app (Make sure you in the same directory as the app)
 
 ```
 node server.js
