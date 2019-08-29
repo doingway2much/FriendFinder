@@ -13,6 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -24,9 +25,9 @@
             <h1 id="redtext" class="display-4">{coding}{survey}</h1>
             <div class="col-sm-11">
                 <div id="redbox">
-                    <p class="lead"></p>Take a quick survey to find your perfect coding friend!!!! All of the 
-                    statements are related to coding and have values from 1 - 5. If you really agree with the 
-                    statement you would select a 5, if feel the complete opposite of the statement you would 
+                    <p class="lead"></p>Take a quick survey to find your perfect coding friend!!!! All of the
+                    statements are related to coding and have values from 1 - 5. If you really agree with the
+                    statement you would select a 5, if feel the complete opposite of the statement you would
                     select 1.</p>
                 </div>
             </div>
@@ -37,7 +38,7 @@
             <br>
             <br>
         </div>
-      
+
         <div class="row"></div>
         <div class="col-1-sm"> </div>
         <div class="col-12-sm">
@@ -49,7 +50,7 @@
                     <input id="photo" type="text" class="form-control" placeholder="URL to  Profile Photo (Required)">
                 </div>
         </div>
-       
+
         <div class="col-1-sm"> </div>
         <div class="col-sm-6">
             <div class="form-group">
@@ -172,16 +173,25 @@
         <div class="row">
             <div class="text-center">
                 <button id="submitButton" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                <br>
             </div>
-            <!-- Modal -->
+        </div>
+    </div>
+            <footer class="footer id="custom-footer">
+                    <div class="container">
+                        <p><a id="foot" href="/api/friends">API Coder Friends List</a>  |  <a id="foot"href="https://github.com/doingway2much/FriendFinder">GitHub Repo</a></p>
+                    </div>
+                </footer>
+           
+
             <div id="coderModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
 
-                    <!-- Modal content-->
+
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">X</button>
-                            <h2 class="modal-title"><strong>Your most compatible coder</strong></h2>
+                            <h2 class="modal-title"><strong>Looks like you are most compatible with:</strong></h2>
                         </div>
                         <div class="modal-body">
                             <h2 id="matchedCoder"></h2>
@@ -194,15 +204,9 @@
                     </div>
 
                 </div>
-            </div>
+
             <br>
-            <footer class="footer">
-                <div class="container">
-                    <p><a href="/api/friends">API Coder Friends List</a> | <a
-                            href="https://github.com/doingway2much/FriendFinder">GitHub Repo</a></p>
-                </div>
-            </footer>
-        </div>
+       
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

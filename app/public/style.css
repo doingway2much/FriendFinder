@@ -36,3 +36,38 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
 }
+
+#roboto {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+/* unvisited link */
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+#foot:hover {
+    color: red;
+}
