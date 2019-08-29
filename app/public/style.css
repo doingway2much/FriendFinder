@@ -71,3 +71,12 @@ a:link {
 #foot:hover {
     color: red;
 }
+
+label {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.modal-content {
+    font-family: 'Roboto', sans-serif;
+}

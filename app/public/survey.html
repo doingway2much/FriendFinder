@@ -16,13 +16,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8576a8272e.js"></script>
+
 </head>
 
 <body>
     <br>
     <div class="container content">
         <div class=jumbotron>
-            <h1 id="redtext" class="display-4">{coding}{survey}</h1>
+            <h1 id="redtext" class="display-4">{coding} {survey}</h1>
             <div class="col-sm-11">
                 <div id="redbox">
                     <p class="lead"></p>Take a quick survey to find your perfect coding friend!!!! All of the
@@ -44,18 +47,18 @@
         <div class="col-12-sm">
             <form>
                 <div class="form-group">
-                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+                    <input id="name" type="text" class="form-control input-sm" placeholder="Name (Required)">
                 </div>
                 <div class="form-group">
-                    <input id="photo" type="text" class="form-control" placeholder="URL to  Profile Photo (Required)">
+                    <input id="photo" type="text" class="form-control input-sm" placeholder="URL to Profile Photo (Required)">
                 </div>
         </div>
-
+   
         <div class="col-1-sm"> </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <label for="statement1">I love javascript and I can not lie!!!!!!</label>
-                <select class="form-control" id="statement1">
+                <label for="statement1">I love JavaScript and I can not lie!!!!!!</label>
+                <select class="form-control input-sm input-sm" id="statement1">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -66,7 +69,7 @@
             </div>
             <div class="form-group">
                 <label for="statement2">Tabs over spaces!!!!</label>
-                <select class="form-control" id="statement2">
+                <select class="form-control input-sm" id="statement2">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -77,7 +80,7 @@
             </div>
             <div class="form-group">
                 <label for="statement3">I don't know what I would do without jQuery!!!!</label>
-                <select class="form-control" id="statement3">
+                <select class="form-control input-sm" id="statement3">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -88,7 +91,7 @@
             </div>
             <div class="form-group">
                 <label for="statement4">HTML is my favorite thing to code!!!!!</label>
-                <select class="form-control" id="statement4">
+                <select class="form-control input-sm" id="statement4">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -99,7 +102,7 @@
             </div>
             <div class="form-group">
                 <label for="statement5">CSS is my jam and I don't know what I wouuld do without it!!!!</label>
-                <select class="form-control" id="statement5">
+                <select class="form-control input-sm" id="statement5">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -114,7 +117,7 @@
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="statement6">Sitting up at night working on mySQL querries brings me joy!!!!</label>
-                <select class="form-control" id="statement6">
+                <select class="form-control input-sm" id="statement6">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -124,8 +127,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="statement7">Handelbars you complete me</label>
-                <select class="form-control" id="statement7">
+                <label for="statement7">Handelbars you complete me!!!!</label>
+                <select class="form-control input-sm" id="statement7">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -136,7 +139,7 @@
             </div>
             <div class="form-group">
                 <label for="statement8">Node.js brings me life!!!!!</label>
-                <select class="form-control" id="statement8">
+                <select class="form-control input-sm" id="statement8">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -146,8 +149,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="statement9">Express is the best thing since sliced bread</label>
-                <select class="form-control" id="statement9">
+                <label for="statement9">Express is the best thing since sliced bread!!!!</label>
+                <select class="form-control input-sm" id="statement9">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -158,7 +161,7 @@
             </div>
             <div class="form-group">
                 <label for="statement10">When in doubt console.log it out!!!!!!!!!</label>
-                <select class="form-control" id="statement10">
+                <select class="form-control input-sm" id="statement10">
                     <option value="empty"></option>
                     <option value="1">1 (I would never say that!!!!)</option>
                     <option value="2">2</option>
@@ -191,15 +194,14 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">X</button>
-                            <h2 class="modal-title"><strong>Looks like you are most compatible with:</strong></h2>
+                            <h2 class="modal-title"><strong>Looks like you are a match with</strong></h2>
                         </div>
                         <div class="modal-body">
                             <h2 id="matchedCoder"></h2>
                             <img id="matchedCoderImg" src="" alt="" height="350" width="300">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" id="closeCoderModal"
-                                data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" id="closeCoderModal" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
