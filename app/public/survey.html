@@ -12,33 +12,46 @@
     <title>Coding Friend Finder Survey</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container content">  
+    <br>
+    <div class="container content">
         <div class=jumbotron>
-                <h1 class="display-4">Coding Survey</h1> 
-                <p class="lead">Take a quick survey to find your perfect codeing friend!!!!  All of the statements are related to coding and have 
-           values from 1 - 5.  If you really aggre with the statemnt your would slect a 5, if feel the complete opisit of the stament you would select 1.</p>
-
+            <h1 id="redtext" class="display-4">{coding}{survey}</h1>
+            <div class="col-sm-11">
+                <div id="redbox">
+                    <p class="lead"></p>Take a quick survey to find your perfect coding friend!!!! All of the 
+                    statements are related to coding and have values from 1 - 5. If you really agree with the 
+                    statement you would select a 5, if feel the complete opposite of the statement you would 
+                    select 1.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
+      
         <div class="row"></div>
         <div class="col-1-sm"> </div>
-       <div class="col-12-sm">
-        <form>
-            <div class="form-group">
-                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
-            </div>
-            <div class="form-group">
-                <input id="photo" type="text" class="form-control" placeholder="URL to  Profile Photo (Required)">
-            </div>
+        <div class="col-12-sm">
+            <form>
+                <div class="form-group">
+                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+                </div>
+                <div class="form-group">
+                    <input id="photo" type="text" class="form-control" placeholder="URL to  Profile Photo (Required)">
+                </div>
         </div>
-
-    <hr>
-    <div class="col-1-sm"> </div>
-            <div class="col-sm-6">
+       
+        <div class="col-1-sm"> </div>
+        <div class="col-sm-6">
             <div class="form-group">
                 <label for="statement1">I love javascript and I can not lie!!!!!!</label>
                 <select class="form-control" id="statement1">
@@ -93,11 +106,11 @@
                     <option value="4">4</option>
                     <option value="5">5 (Damm are you reading my mind)</option>
                 </select>
-           
+
+            </div>
         </div>
-    </div>
-    <div class="col-sm-1"> </div>
-            <div class="col-sm-6">
+        <div class="col-sm-1"> </div>
+        <div class="col-sm-6">
             <div class="form-group">
                 <label for="statement6">Sitting up at night working on mySQL querries brings me joy!!!!</label>
                 <select class="form-control" id="statement6">
@@ -154,98 +167,99 @@
                 </select>
             </div>
         </div>
-    
+
         </form>
         <div class="row">
-		<div class="text-center">
-			<button id="submitButton" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+            <div class="text-center">
+                <button id="submitButton" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+            </div>
+            <!-- Modal -->
+            <div id="coderModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                            <h2 class="modal-title"><strong>Your most compatible coder</strong></h2>
+                        </div>
+                        <div class="modal-body">
+                            <h2 id="matchedCoder"></h2>
+                            <img id="matchedCoderImg" src="" alt="" height="350" width="300">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" id="closeCoderModal"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Coder Friends List</a> | <a
+                            href="https://github.com/doingway2much/FriendFinder">GitHub Repo</a></p>
+                </div>
+            </footer>
         </div>
-        <!-- Modal -->
-        <div id="coderModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-  
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">X</button>
-              <h2 class="modal-title"><strong>Your most compatible coder</strong></h2>
-            </div>
-            <div class="modal-body">
-              <h2 id="matchName"></h2>
-              <img id="matchImg" src ="" alt="" height="350" width="300">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" id="closeCoderModal" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-   <br>
-    <footer class="footer">
-            <div class="container">
-              <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/doingway2much/FriendFinder">GitHub Repo</a></p>
-            </div>
-          </footer>
-</div>
-            <!--[if lt IE 7]>
+        <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
 
 
 <script type="text/javascript">
-	$("#submitButton").on("click", function(event) {
-		event.preventDefault();
-		// Form validation
-		var good = true;
-		if($("#name").val() === "" || $("#photo").val() === "") {
-			good = false;
-		} else if($("#statement1").val() === "empty" || $("#statement2").val() === "empty" || $("#statement3").val() === "empty" || $("#statement4").val() === "empty" || $("#statement5").val() === "empty" || $("#statement6").val() === "empty" || $("#statement7").val() === "empty" || $("#statement8").val() === "empty" || $("#statement9").val() === "empty" || $("#statement10").val() === "empty") {
-			good = false;
-		}
-		if(good === true) {
-			var newUser = {
-				name: $("#name").val().trim(),
-				photo: $("#photo").val().trim(),
-				scores: [
-					$("#statement1").val(),
-					$("#statement2").val(),
-					$("#statement3").val(),
-					$("#statement4").val(),
-					$("#statement5").val(),
-					$("#statement6").val(),
-					$("#statement7").val(),
-					$("#statement8").val(),
-					$("#statement9").val(),
-					$("#statement10").val()
-				]
-			};
-			var currentURL = window.location.origin;
-	
-			$.post(currentURL + "/api/friends", newUser, function(data) {
-                console.log("New friend added!!!!!")
-                $("#matchName").text(data.name);
-                $('#matchImg').attr("src", data.photo);
+    $("#submitButton").on("click", function (event) {
+        event.preventDefault();
+        var good = true;
+        if ($("#name").val() === "" || $("#photo").val() === "") {
+            good = false;
+        } else if ($("#statement1").val() === "empty" || $("#statement2").val() === "empty" || $("#statement3").val() === "empty" || $("#statement4").val() === "empty" || $("#statement5").val() === "empty" || $("#statement6").val() === "empty" || $("#statement7").val() === "empty" || $("#statement8").val() === "empty" || $("#statement9").val() === "empty" || $("#statement10").val() === "empty") {
+            good = false;
+        }
+        if (good === true) {
+            var newCoder = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#statement1").val(),
+                    $("#statement2").val(),
+                    $("#statement3").val(),
+                    $("#statement4").val(),
+                    $("#statement5").val(),
+                    $("#statement6").val(),
+                    $("#statement7").val(),
+                    $("#statement8").val(),
+                    $("#statement9").val(),
+                    $("#statement10").val()
+                ]
+            };
+            var currentURL = window.location.origin;
+
+            $.post(currentURL + "/api/friends", newCoder, function (data) {
+                $("#matchedCoder").text(data.name);
+                console.log(data.photo);
+                $('#matchedCoderImg').attr("src", data.photo);
                 $("#coderModal").modal('toggle');
                 $("#name").val("");
                 $("#photo").val("");
-			});
-		} else {
-		
-			alert("Opps looks like you missed one!!!!!");
-		}
+            });
+        } else {
+
+            alert("Opps looks like you missed one!!!!!");
+        }
     });
-    
-    $('#closeCoderModal').click(function() {
-    $.get('/',function(req,res){
-    location.replace(res);
-    })
-});
+
+    $('#closeCoderModal').click(function () {
+        $.get('/', function (req, res) {
+            location.replace(res);
+        })
+    });
 </script>
