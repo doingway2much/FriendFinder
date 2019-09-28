@@ -1,6 +1,6 @@
 # Coding Friend Finder
 
-This App uses NODE.js + Javascript + Express + jQuery to complie a list of frinds and compare values based on statements they anwser.  Once a user completes a survey their vlaues will be compared to all of the other users values and the App will display the user with the closest values to yours.  
+This App uses NODE.js + Javascript + Express + jQuery to complie a list of friends and compare values based on statements they answer. Once a user completes a survey their values will be compared to all of the other users values and the App will display the user with the closest values to yours.
 
 
 # Home Screen
